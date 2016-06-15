@@ -34,7 +34,7 @@ class Gamer:
         self.bing = sorted(each_organize(bing))
         self.majiang_set = set(self.majiang)
         self.majiang_type = [self.feng,self.wan,self.tiao,self.bing]
-    #检查暗杠
+    #检查杠
     def check_AAAA(self):
         self.gangflag = 0
         for i in range(4):
@@ -330,8 +330,6 @@ while majiang != []:
                     i = gamerlist.index(each_othergamer)
                     gang_flag = 1
                     break
-                    '''put = each_othergamer.get_majiang(majiang[0])
-                    watch()'''
         watch()
         if gang_flag == 0:
             if i == 3:
